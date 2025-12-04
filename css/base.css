@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*hace que el ancho/alto de los elementos sea más fácil de controlar.*/
+    box-sizing: border-box; 
 }
 
 :root{
@@ -28,9 +28,9 @@ body {
 .main{
     margin: 3rem;
     display: grid;
-    grid-template-columns: 20pxpx 1fr;   /* Columna estrecha + columna amplia */
+    grid-template-columns: 20pxpx 1fr;   
     grid-template-rows: auto auto auto;
-    gap: 2rem;           /* Espacios elegantes entre secciones */
+    gap: 2rem;           
     position: relative;
 }
 
@@ -120,7 +120,6 @@ body {
     height: 250px;
 }
 
-/* ---------- CARRUSEL ---------- */
 .carrousel {
     padding: 0 0.1rem;
     position: absolute;
@@ -143,6 +142,10 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.2s ease;
+}
+.img img:hover{
+    transform: scale(1.1);
 }
 
 .s1 { animation-delay: 0s; }
@@ -158,7 +161,6 @@ body {
     100% { opacity: 0; }
 }
 
-/* ---------- TEXTO OCULTO ---------- */
 .text {
     position: absolute;
     width: 20 rem;
@@ -169,18 +171,15 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-/* Mostrar texto cuando es target */
 #text:target {
     display: block;
 }
 
-/* Ocultar carrusel cuando se abre el texto */
 #text:target ~ #carrousel{
     opacity: 0;
     pointer-events: none;
 }
 
-/* Botón cerrar */
 .close {
     float: right;
     text-decoration: none;
@@ -199,16 +198,14 @@ body {
     line-height: 1.5;
     
 }
-title{
-   
-}
+
 .title h1 {
     font-family: var(--font-text);
-    font-size: 3.5rem;          /* Título grande */
-    font-weight: 800;           /* Muy fuerte */
-    color: #ffffff;             /* Blanco elegante */
-    text-transform: uppercase;  /* Estilo moderno */
-    letter-spacing: 4px;        /* Separación elegante */
+    font-size: 3.5rem;          
+    font-weight: 800;           
+    color: #ffffff;             
+    text-transform: uppercase;  
+    letter-spacing: 4px;        
     text-align: center;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, #ffffff, #b9d5fa);
