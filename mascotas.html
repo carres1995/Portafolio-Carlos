@@ -3,22 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Pets Wilds</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Wild Pets Gallery</title>
+    <link rel="stylesheet" href="css/mascotas.css">
 </head>
 <body>
-    <section id="pets" class="pets">
-        <h2> The pets Wilds</h2><br>
 
-        <img src="img/aguila.webp" alt="Eagle">
-        <article>In <strong>Mongolia</strong>, they are part of a deep cultural tradition of hunting with eagles and a symbol of honor, freedom, and loyalty.</article>
-        <img src="img/lince.jpeg" alt="Lince">
-        <article>For the ancestral <strong>Hopewell culture</strong>, it was a tradition to keep lynxes as pets.</article>
-        <img src="img/lobo.jpeg" alt="Wolf">
-        <article>The cultures that domesticated wolves were the nomadic hunter-gatherer peoples of <strong>Eurasia and North America</strong>.</article>
-        <img src="img/spirit.jpg" alt="Horses">
-        <article>The cultures that domesticated horses were primarily those of the <strong>Eurasian steppes</strong>, such as the ancient peoples of southern Russia and Ukraine, and the Bronze Age Sintashta culture.</article>
-        
-    </section>
+    <main class="layout">
+        <!-- Sidebar (reuse your portfolio sidebar) -->
+        <aside class="sidebar">
+            <img class="avatar" src="/img/profile/WhatsApp Image 2025-11-14 at 11.46.31.jpeg" alt="Profile photo">
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#pets">Wild Pets</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Galería de mascotas -->
+        <section class="section pets" id="pets">
+            <h1 class="title">Wild Pets Gallery</h1>
+            <p class="description">Discover some of the wild animals that different cultures historically kept as companions or symbols of status and skill.</p>
+
+            <div class="gallery">
+                <div class="gallery-card">
+                    <img src="img/mascotas/aguila.webp" alt="Eagle">
+                    <h3>Eagle</h3>
+                    <p>In <strong>Mongolia</strong>, eagles are used in hunting traditions and symbolize honor, freedom, and loyalty.</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="img/mascotas/lince.jpeg" alt="Lynx">
+                    <h3>Lynx</h3>
+                    <p>The <strong>Hopewell culture</strong> in North America historically kept lynxes as exotic pets, symbolizing status and power.</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="img/mascotas/lobo.jpeg" alt="Wolf">
+                    <h3>Wolf</h3>
+                    <p>Nomadic hunter-gatherer peoples of <strong>Eurasia and North America</strong> domesticated wolves for companionship and hunting support.</p>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="img/mascotas/spirit.jpg" alt="Horse">
+                    <h3>Horse</h3>
+                    <p>Domesticated primarily in the <strong>Eurasian steppes</strong>, horses were vital for transport, warfare, and social status.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

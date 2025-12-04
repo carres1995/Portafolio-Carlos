@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f141b;
+    font-family: "Poppins", sans-serif;
+    color: #e1e1e1;
+}
+
+
+.sidebar {
+    background: #131920;
+    padding: 2rem 1rem;
+    border-right: 1px solid #1e2630;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #324053;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-menu a {
+    color: #d9d9d9;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00aaff;
+}
+
+
+.section {
+    padding: 4rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.description {
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: #cfd1d8;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-card {
+    background: #1b222c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, background 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.gallery-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4ab8ff;
+}
+
+.gallery-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #d1d1d1;
+}
+
+.gallery-card:hover {
+    transform: scale(1.03);
+    background: #26303f;
+}
+
+
+@media (max-width: 900px) {
+    .section {
+        padding: 2rem;
+    }
+
+    .gallery-card img {
+        height: 180px;
+    }
+}

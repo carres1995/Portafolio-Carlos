@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>My portafolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>My Portfolio</title>
 </head>
+
 <body>
-    <main class="main">
-        <header class="header">
-            <img class="logo" src="/img/profile/WhatsApp Image 2025-11-14 at 11.46.31.jpeg" alt="profile photo" width="200rem" height="200rem">
-            <nav class="nav">
-                <ul class="nav_link">
-                    <li><a href="#sobre_mi">About me</a></li>
-                    <li><a href="#proyectos">Proyects</a></li>
-                    <li><a href="#contactos">Contact</a></li>
-                    <li><a href="mascotas.html">Pets</a></li>
+    <main class="layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <img class="avatar" src="/img/profile/WhatsApp Image 2025-11-14 at 11.46.31.jpeg" alt="Profile photo">
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="/mascotas.html">Wild Pets</a></li>
                 </ul>
             </nav>
-        </header>
-        <div class="style"></div>
-        <section class="profile" id="sobre_mi">
-            <div class="title">
-                <h1>Who I'm</h1>
-            </div>
-            <div class="container">
-                <div id="text" class="text">
-                    <a href="#carrousel" class="close">X</a>
-                    <h2>About me</h2>
-                    <p>Hello everybody, My name is <strong>Carlos Andres Restrepo</strong>, I'm 30 years old.
-                    I love to play basketball, football and walk in nature. I hope you can get to know me.
-                    </p>
+        </aside>
+
+        <!-- ABOUT -->
+        <section class="section about" id="about">
+            <h1 class="title">Who I'm</h1>
+
+            <p class="description">
+                Hi I'm <strong>Carlos Andres Restrepo</strong>, I'm 30 years old I live in Sabaneta, I'm learning Software Development, English and Live Habilities, I want to be a honest person.  
+            </p>
+
+            <!-- CAROUSEL -->
+            <div class="carousel" id="carousel">
+                <div class="slide s1">
+                    <img src="/img/profile/hijo padre.jpg" alt="Activity with my son">
                 </div>
-
-                <div class="carrousel" id="carrousel">
-                    <div class="img s1">
-                        <a href="#text"><img src="/img/profile/hijo padre.jpg" alt="Activity with my son"></a>
-                    </div>
-
-                    <div class="img s2">
-                        <a href="#text"><img src="/img/profile/Ncaa Sports Sport GIF by Delaware Blue Hens.gif" alt="Play basketball"></a>
-                    </div>
-
-                    <div class="img s3">
-                        <a href="#text"><img src="/img/profile/Go On My Way GIF by Tirol.gif" alt="Walk in the nature"></a>
-                    </div>
-
-                    <div class="img s4">
-                        <a href="#text"><img src="/img/profile/draw.jpeg" alt="Drawing"></a>
-                    </div>
+                <div class="slide s2">
+                    <img src="/img/profile/Ncaa Sports Sport GIF by Delaware Blue Hens.gif" alt="">
                 </div>
-
+                <div class="slide s3">
+                    <img src="/img/profile/Go On My Way GIF by Tirol.gif" alt="">
+                </div>
+                <div class="slide s4">
+                    <img src="/img/profile/draw.jpeg" alt="">
+                </div>
             </div>
+        </section>
 
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <h2 class="subtitle">Skills</h2>
+            <div class="skills-grid">
+                <div class="card">Teamwork</div>
+                <div class="card">Problem Solving</div>
+                <div class="card">Adaptive Learning</div>
+                <div class="card">Creativity</div>
+                <div class="card">Basic Programming</div>
+            </div>
         </section>
-        <section id="proyectos" class="proyect">
-                <h2>Proyectos</h2>
-                    <ul>
-                        <li><a href="https://github.com/carres1995" target="_blank">github</a></li>
-                        <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank">facebook</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=52Wpl_01NsM" target="_blank">youtube</a></li>
-                    </ul>
 
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+            <h2 class="subtitle">My GitHub Projects</h2>
+
+            <nav class="projects-vertical-menu">
+                <ul>
+                    <li><a href="https://github.com/carres1995/Proyecto1" target="_blank">Portfolio Website</a></li>
+                    <li><a href="https://github.com/carres1995/Proyecto2" target="_blank">JavaScript Mini Games</a></li>
+                    <li><a href="https://github.com/carres1995/Proyecto3" target="_blank">Weather App</a></li>
+                    <li><a href="https://github.com/carres1995/Proyecto4" target="_blank">Basic CRUD App</a></li>
+                    <li><a href="https://github.com/carres1995" target="_blank">More on GitHub</a></li>
+                </ul>
+            </nav>
         </section>
-        <section id="contactos" class="contact">
-                <form action="#">
-                    <label for="name">Name</label>
-                    <input type="text" placeholder="Enter name" required>
-                    <label for="contact">Contact</label>
-                    <input type="number" placeholder="Enter number" required>
-                    <button>Register</button>
-                </form>
-        </section>
-        
+
+
     </main>
 </body>
 </html>
