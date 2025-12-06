@@ -2,56 +2,18 @@
     display: grid;
     grid-template-columns: 260px 1fr;
     min-height: 100vh;
-}
-
-.sidebar {
-    background: #131920;
-    padding: 2rem 1rem;
-    border-right: 1px solid #1e2630;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.avatar {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #324053;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.nav-menu a {
-    color: #d9d9d9;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    transition: 0.3s;
-}
-
-.nav-menu a:hover {
-    color: #00aaff;
-}
-
+} /*Aca esta es display de cajas el cual lo genero en un grid como funcionalidad completa del main*/
 
 .section {
     padding: 4rem;
-}
+} /*cada section usan rem como buena practica responsive la mayoria de tamaños es con rem para evitar cortes de texto*/
 
 .title {
     font-size: 3rem;
     margin-bottom: 2rem;
     font-weight: 700;
     color: #fff;
-}
+}/*Margen bajo tamaño letra longitud del texto y color*/
 
 .subtitle {
     font-size: 2rem;
@@ -74,20 +36,20 @@
     overflow: hidden;
     border-radius: 10px;
     margin-top: 1rem;
-}
+} /*configuraciones de las imagenes en carrusel*/
 
 .slide {
     position: absolute;
     inset: 0;
     opacity: 0;
     animation: fade 12s infinite;
-}
+} /*generacion de animaciones y  posicionamiento de imagenes*/
 
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} /*tamaño de imagenes el cover se acomoda al tamaño de la caja cubriendo todo el espacio sin dañar las imagenes y gift*/
 
 .s1 { animation-delay: 0s; }
 .s2 { animation-delay: 3s; }
@@ -100,14 +62,14 @@
     30% {opacity: 1;}
     40% {opacity: 0;}
     100% {opacity: 0;}
-}
+}/*el fekframs es para animaciones genera tiempos de opacidad en periodas porcentuados, los tiempos por imagen se definen por imagen en la etiqueta anterior*/
 
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1rem;
-}
+}/* proceso responsive del grid poniendo la cantidad de cajas posibles en el espacio y poniendo minimos y maximos de tamaños de las cajas.*/
 
 .card {
     padding: 1rem;
@@ -116,43 +78,11 @@
     border-radius: 8px;
     font-weight: bold;
     transition: 0.3s;
-}
+}/*configuraciones de estilo de targetas de habilidades*/
 
 .card:hover {
     background: #26303f;
-}
-
-
-.social-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 1rem;
-}
-
-.social-card {
-    padding: 1rem;
-    text-align: center;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    background: #252c36;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.social-card:hover {
-    transform: scale(1.05);
-}
-
-.github { background:#333; }
-.facebook { background:#1877f2; }
-.instagram { background:#c13584; }
-.linkedin { background:#0077b5; }
-
+} /*hover cuando el cursor se posiciona el la caja de texto*/
 
 .projects-vertical-menu ul {
     list-style: none;
