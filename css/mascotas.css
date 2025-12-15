@@ -1,65 +1,30 @@
 
-.section {
-    padding: 4rem;
+.section {padding: 4rem;
 }
 
-.title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    color: #fff;
+.title {font-size: 3rem;margin-bottom: 1rem;font-weight: 700;color: #fff;
 }
 
-.description {
-    max-width: 700px;
-    font-size: 1.2rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-    color: #cfd1d8;
+.description {max-width: 700px;font-size: 1.2rem;line-height: 1.7;margin-bottom: 2rem;color: #cfd1d8;
 }
 
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
+.gallery {display: grid;grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));gap: 2rem;
 }
 
-.gallery-card {
-    background: #1b222c;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s, background 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
+.gallery-card {background: #1b222c;border-radius: 10px;overflow: hidden;transition: transform 0.3s, background 0.3s;display: flex;flex-direction: column;align-items: center;text-align: center;padding: 1rem;
 }
 
-.gallery-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+.gallery-card img {width: 100%;height: auto;object-fit: cover;border-radius: 8px;margin-bottom: 1rem;
 }
 
-.gallery-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #4ab8ff;
+.gallery-card h3 {font-size: 1.5rem;margin-bottom: 0.5rem;color: #4ab8ff;
 }
 
-.gallery-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #d1d1d1;
+.gallery-card p {font-size: 1rem;line-height: 1.5;color: #d1d1d1;
 }
 
-.gallery-card:hover {
-    transform: scale(1.03);
-    background: #26303f;
+.gallery-card:hover {transform: scale(1.03);background: #26303f;
 }
 
 
@@ -69,6 +34,6 @@
     }
 
     .gallery-card img {
-        height: 180px;
+        height: 200px;
     }
 }
